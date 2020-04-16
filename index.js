@@ -16,7 +16,7 @@ const walkToPark = function(name, breed){
   return phrase;
 }
 
-const throwFrisbee = function throwFrisbee(name, breed){
+const throwFrisbee = function(name, breed){
   const phrase = createPhrase("Throw the frisbee for", name, breed);
   console.log(phrase);
   return phrase;
