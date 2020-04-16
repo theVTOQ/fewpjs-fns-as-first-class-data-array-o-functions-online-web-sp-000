@@ -41,6 +41,7 @@ function exerciseDog(dogName, dogBreed){
   for(let i = 0; i < routine.length; ++i) {
     results.push(routine[i](dogName, dogBreed));
   }
+  return results;
 }
 
 function createPhrase(verb, name, breed){
