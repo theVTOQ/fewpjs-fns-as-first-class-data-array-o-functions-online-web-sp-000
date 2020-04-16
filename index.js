@@ -10,7 +10,7 @@ const leashDog = function(name, breed){
   return phrase;
 }
 
-const walkToPark = function walkToPark(name, breed){
+const walkToPark = function(name, breed){
   const phrase = createPhrase("Walk to the park with", name, breed);
   console.log(phrase);
   return phrase;
