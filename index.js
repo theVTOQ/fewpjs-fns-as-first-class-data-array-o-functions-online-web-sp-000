@@ -1,45 +1,47 @@
-const wakeDog = function wakeDog(name, breed){
+const wakeDog = function(name, breed){
   const phrase = createPhrase("Wake", name, breed);
   console.log(phrase);
   return phrase;
 }
 
-const leashDog = function leashDog(name, breed){
+const leashDog = function(name, breed){
   const phrase = createPhrase("Leash", name, breed);
   console.log(phrase);
   return phrase;
 }
 
-const walkToPark = function walkToPark(name, breed){
+const walkToPark = function(name, breed){
   const phrase = createPhrase("Walk to the park with", name, breed);
   console.log(phrase);
   return phrase;
 }
 
-const throwFrisbee = function throwFrisbee(name, breed){
+const throwFrisbee = function(name, breed){
   const phrase = createPhrase("Throw the frisbee for", name, breed);
   console.log(phrase);
   return phrase;
 }
 
-const walkHome = function walkHome(name, breed){
+const walkHome = function(name, breed){
   const phrase = createPhrase("Walk home with", name, breed);
   console.log(phrase);
   return phrase;
 }
 
-const unleashDog = function unleashDog(name, breed){
+const unleashDog = function(name, breed){
   const phrase = createPhrase("Unleash", name, breed);
   console.log(phrase);
   return phrase;
 }
 
-function exerciseDog(dogName, dogBreed){
-  const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
+const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
-  for(let i = 0; i < routine.length; i++) {
-    routine[i]();
+function exerciseDog(dogName, dogBreed){
+  const results = [];
+  for(let i = 0; i < routine.length; ++i) {
+    results.push(routine[i](dogName, dogBreed));
   }
+  return results;
 }
 
 function createPhrase(verb, name, breed){
