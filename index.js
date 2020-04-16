@@ -1,4 +1,4 @@
-const wakeDog = function wakeDog(name, breed){
+const wakeDog = function(name, breed){
   const phrase = createPhrase("Wake", name, breed);
   console.log(phrase);
   return phrase;
