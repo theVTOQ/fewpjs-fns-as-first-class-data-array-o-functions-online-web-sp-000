@@ -4,7 +4,7 @@ const wakeDog = function(name, breed){
   return phrase;
 }
 
-const leashDog = function leashDog(name, breed){
+const leashDog = function(name, breed){
   const phrase = createPhrase("Leash", name, breed);
   console.log(phrase);
   return phrase;
