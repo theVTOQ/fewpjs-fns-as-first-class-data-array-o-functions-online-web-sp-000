@@ -28,7 +28,7 @@ const walkHome = function(name, breed){
   return phrase;
 }
 
-const unleashDog = function unleashDog(name, breed){
+const unleashDog = function(name, breed){
   const phrase = createPhrase("Unleash", name, breed);
   console.log(phrase);
   return phrase;
