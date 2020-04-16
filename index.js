@@ -22,7 +22,7 @@ const throwFrisbee = function(name, breed){
   return phrase;
 }
 
-const walkHome = function walkHome(name, breed){
+const walkHome = function(name, breed){
   const phrase = createPhrase("Walk home with", name, breed);
   console.log(phrase);
   return phrase;
